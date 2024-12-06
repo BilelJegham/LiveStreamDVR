@@ -314,7 +314,7 @@ function deleteFile(file: ApiFile) {
 }
 
 function downloadLink(file: ApiFile) {
-    const base = import.meta.env.BASE_URL || "/";
+    const base = import.meta.env.VITE_APP_BASE_URL || "/";
     const url = `${base}${props.web}/${file.name}`;
     return url;
 }

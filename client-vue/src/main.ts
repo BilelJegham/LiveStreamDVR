@@ -17,8 +17,8 @@ import DButton from "@/components/reusables/DButton.vue";
 import DSelect from "@/components/reusables/DSelect.vue";
 import DBoolean from "@/components/reusables/DBoolean.vue";
 
-if (import.meta.env.BASE_URL !== undefined) {
-    axios.defaults.baseURL = import.meta.env.BASE_URL;
+if (import.meta.env.VITE_APP_BASE_URL !== undefined) {
+    axios.defaults.baseURL = import.meta.env.VITE_APP_BASE_URL;
 }
 
 createApp(App)

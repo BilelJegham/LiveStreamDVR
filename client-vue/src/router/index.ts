@@ -150,7 +150,7 @@ const routes: Array<RouteRecordRaw> = [
 
 const router = createRouter({
     // history: createWebHashHistory(),
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHistory(import.meta.env.VITE_APP_BASE_URL),
     // history: createWebHistory((window as any).BASE_URL),
     routes,
     scrollBehavior(to, from, savedPosition) {

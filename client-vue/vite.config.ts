@@ -17,6 +17,7 @@ export default defineConfig({
   // define: {
   //   '__VUE_OPTIONS_API__': false,
   // },
+  base: process.env.VITE_APP_BASE_URL ?? '/',
   plugins: [
     vue(),
     VitePWA({
